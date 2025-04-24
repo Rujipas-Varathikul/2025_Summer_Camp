@@ -25,162 +25,230 @@
       </nav>
     </header>
     <main>
-      <section aria-label="About Me">
-        <h1 id="about-me">Hi! My name is Vetit. ☺️</h1>
-        <!-- alternative text -->
-        <img
-          src="./pictures/home-background.jpeg"
-          width="200px"
-          alt="พี่เวยืนหันหน้าเข้าหากล้องที่หน้าเทือกเขาในสวิสเซอร์แลนด์"
-        />
-        <p>Data Science Student >.Coder</p>
-        <a href="#contact-me" class="button">Contact Me</a>
+      <section id="about-me" aria-label="About Me">
+        <div>
+          <h1>Hi! My name is Vetit. ☺️</h1>
+          <p>
+            Data Science Student
+            <br />
+            <span>>.Coder</span>
+          </p>
+          <a href="#contact-me" class="button">Contact Me</a>
+        </div>
       </section>
 
-      <section id="skills" aria-labelledby="skills">
-        <h2>Skills</h2>
+      <section id="skills" aria-labelledby="skills-label" class="grid-6">
+        <h2 id="skills-label">Skills</h2>
         <img
+          id="skill-pic"
+          class="span-3"
           src="./pictures/skill-dec.png"
           width="200px"
           alt="Ve is coding on the computer"
         />
-        <img src="./pictures/deep-learning.png" width="50px" alt="" />
-        <h3>Machine Learning</h3>
-        <p>
-          I have 3 years of experience on computer vision such as Medical
-          Imaging, License Plate Recognition, Documents OCR, Basic
-          Classification Problems. This also includes Regression Problems,
-          Decision Trees, Future Prediction, Face Detection, Human-Pose
-          Recognition etc.
-        </p>
-        <img src="./pictures/web-development.png" width="50px" alt="" />
-        <h3>Web development</h3>
-        <p>
-          My project towards Web Development are built on React As a front-end
-          frameworks, Node.JS as a backend which mostly use Firebase as a
-          Non-SQL Database and Web Hosting, Supabase as a SQL database, and Rest
-          API as a connector between front and back. I just started since 2022
-          and I am eagerly learning new aspect upon this field.
-        </p>
-        <img src="./pictures/analytics.png" width="50px" alt="" />
-        <h3>Data Analytics</h3>
-        <p>
-          As next year, I am graduated from B.Sc. Data Science, I have lots of
-          classwork for data analytics from variety of datasets.
-        </p>
-        <img src="./pictures/code.png" width="50px" alt="" />
-        <h3>Programming</h3>
-        <p>
-          I have been coding in Python, Javascript for two years in several
-          projects including Machine Learning and Web Development; also, some
-          experience towards C++ and Java in class work.
-        </p>
+        <div class="skill-list span-3">
+          <div class="skill-item">
+            <img src="./pictures/deep-learning.png" width="50px" alt="" />
+            <div>
+              <h3>Machine Learning</h3>
+              <p>
+                I have 3 years of experience on computer vision such as Medical
+                Imaging, License Plate Recognition, Documents OCR, Basic
+                Classification Problems. This also includes Regression Problems,
+                Decision Trees, Future Prediction, Face Detection, Human-Pose
+                Recognition etc.
+              </p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <img src="./pictures/web-development.png" width="50px" alt="" />
+            <div>
+              <h3>Web development</h3>
+              <p>
+                My project towards Web Development are built on React As a
+                front-end frameworks, Node.JS as a backend which mostly use
+                Firebase as a Non-SQL Database and Web Hosting, Supabase as a
+                SQL database, and Rest API as a connector between front and
+                back. I just started since 2022 and I am eagerly learning new
+                aspect upon this field.
+              </p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <img src="./pictures/analytics.png" width="50px" alt="" />
+            <div>
+              <h3>Data Analytics</h3>
+              <p>
+                As next year, I am graduated from B.Sc. Data Science, I have
+                lots of classwork for data analytics from variety of datasets.
+              </p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <img src="./pictures/code.png" width="50px" alt="" />
+            <div>
+              <h3>Programming</h3>
+              <p>
+                I have been coding in Python, Javascript for two years in
+                several projects including Machine Learning and Web Development;
+                also, some experience towards C++ and Java in class work.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section aria-labelledby="research">
-        <h2 id="research">Research</h2>
-        <h3>
-          OCTAve: 2D en face Optical Coherence Tomography Angiography Vessel
-          Segmentation in Weakly-Supervised Learning with Locality Augmentation
-        </h3>
-        <p>
-          Weakly-Supervised Deep learning Models for Retinal Vessel Segmentation
-          using GAN-based and Attention Mechanisms. This paper is written and
-          published on IEEE Transactions on Biomedical Engineering on year 2023.
-          The paper can be accessed via link below.
-        </p>
-        <a
-          href="https://www.researchgate.net/publication/362250474_OCTAve_2D_en_face_Optical_Coherence_Tomography_Angiography_Vessel_Segmentation_in_Weakly-Supervised_Learning_with_Locality_Augmentation"
-          target="_blank"
-          >IEEE Explore</a
-        >
+      <section
+        id="research"
+        aria-labelledby="research-label"
+        class="grid-6 section-dark"
+      >
+        <div class="span-3">
+          <h2 id="research-label">Research</h2>
+          <h3>
+            OCTAve: 2D en face Optical Coherence Tomography Angiography Vessel
+            Segmentation in Weakly-Supervised Learning with Locality
+            Augmentation
+          </h3>
+          <p>
+            Weakly-Supervised Deep learning Models for Retinal Vessel
+            Segmentation using GAN-based and Attention Mechanisms. This paper is
+            written and published on IEEE Transactions on Biomedical Engineering
+            on year 2023. The paper can be accessed via link below.
+          </p>
+          <a
+            class="button"
+            href="https://www.researchgate.net/publication/362250474_OCTAve_2D_en_face_Optical_Coherence_Tomography_Angiography_Vessel_Segmentation_in_Weakly-Supervised_Learning_with_Locality_Augmentation"
+            target="_blank"
+            >IEEE Explore</a
+          >
+        </div>
         <img
+          class="span-3"
           src="./pictures/research.png"
           width="200px"
           alt="Part of the research paper showing 4 black and white pictures of vessels in the eye."
         />
       </section>
-      <section aria-labelledby="experience">
-        <h2 id="experience">Experience</h2>
-        <h3>Machine Learning Engineer Intern</h3>
-        <p>
-          Working as a Machine Learning Engineer and Developer in SKY ICT PCL.
-          since 2021, mainly creating Computer Vision Models for Security
-          Managements, Facility Managements such as License Plate Recognition
-          (LPR), Document Classifier, Document Optical Character Recognition
-          (OCR), etc.
-        </p>
+
+      <section
+        id="experience"
+        class="grid-6"
+        aria-labelledby="experience-label"
+      >
+        <h2 id="experience-label">Experience</h2>
+        <div class="span-3">
+          <h3>Machine Learning Engineer Intern</h3>
+          <p>
+            Working as a Machine Learning Engineer and Developer in SKY ICT PCL.
+            since 2021, mainly creating Computer Vision Models for Security
+            Managements, Facility Managements such as License Plate Recognition
+            (LPR), Document Classifier, Document Optical Character Recognition
+            (OCR), etc.
+          </p>
+          <img
+            src="./pictures/sky-corporation.png"
+            width="50px"
+            alt="Sky Company Logo"
+          />
+          <a class="button" href="https://www.skyict.co.th/en" target="_blank"
+            >SKY ICT PCL.</a
+          >
+        </div>
         <img
-          src="./pictures/sky-corporation.png"
-          width="50px"
-          alt="Sky Company Logo"
-        />
-        <a href="https://www.skyict.co.th/en" target="_blank">SKY ICT PCL.</a>
-        <img
+          id="experience-pic"
+          class="span-3"
           src="./pictures/car-detection.png"
           width="200px"
           alt="The traffic where each car has a rectangular boarder surrounded and the label say 
       what the car's model is."
         />
       </section>
-      <section aria-labelledby="education">
-        <h2 id="education">Educations</h2>
-        <img src="./pictures/hs.png" width="200px" alt="" />
-        <h3>Habour.Space@UTCC</h3>
-        <p>B.Sc. Data Science</p>
-        <a
-          class="button"
-          href="https://harbourspace.utcc.ac.th/"
-          target="_blank"
-          >Visit Harbour.Space@UTCC Website</a
-        >
-        <img src="./pictures/kvis.png" width="200px" alt="" />
-        <h3>Kamnoetvidya Science Academy (KVIS)</h3>
-        <p>Science Boarding High School 3y full scholarships</p>
-        <a class="button" href="https://www.kvis.ac.th/" target="_blank"
-          >Visit KVIS Website</a
-        >
+
+      <section
+        id="education"
+        class="grid-6 section-dark"
+        aria-labelledby="education-label"
+      >
+        <h2 id="education-label">Educations</h2>
+        <div id="hsutcc" class="span-6">
+          <h3>Habour.Space@UTCC</h3>
+          <p>B.Sc. Data Science</p>
+          <a
+            class="button"
+            href="https://harbourspace.utcc.ac.th/"
+            target="_blank"
+            >Visit Harbour.Space@UTCC Website</a
+          >
+        </div>
+        <div id="kvis" class="span-6">
+          <div class="span-2">
+            <h3>Kamnoetvidya Science Academy (KVIS)</h3>
+            <p>
+              Science Boarding High School <br />
+              3y full scholarships
+            </p>
+            <a class="button" href="https://www.kvis.ac.th/" target="_blank"
+              >Visit KVIS Website</a
+            >
+          </div>
+        </div>
       </section>
-      <section aria-labelledby="achievement">
-        <h2 id="achievement">Achievements</h2>
-        <img src="./pictures/wizmic.png" width="200px" alt="" />
-        <h3>WIZMIC 2014</h3>
-        <p>
-          In 2014, I had participated in Wizard at Mathematics International
-          Competition 2014 (WIZMIC) between 14-22 October 2014, India. I won a
-          Gold medal in Individual Contest, Champion in Team Contest, and Gold
-          medal in Group Contest.
-        </p>
-        <img src="./pictures/pmwc.png" width="200px" alt="" />
-        <h3>PMWC 2015</h3>
-        <p>
-          Po Leung Kuk Primary Mathematics World Contest 2015 (PMWC 2015)
-          between 12-17 July 2015 at Hongkong, I have been selected to be one of
-          representative of 12 Thai talents participating in PMWC International
-          Mathematics Olympiad and got Gold medal on Individual contest with
-          score of 14 out of 15.
-        </p>
-        <img src="./pictures/itym.png" width="200px" alt="" />
-        <h3>ITYM 2019</h3>
-        <p>
-          I have been selected to be part of KVIS Thai team in the International
-          Tournaments of Young Mathematicians (ITYM) 2019 in Barcelona, Spain. I
-          got honorable mention awards with my team.
-        </p>
-        <img src="./pictures/kvis-isf.png" width="200px" alt="" />
-        <h3>4th KVIS ISF</h3>
-        <p>
-          During KVIS, I had 3 years to develop and create a Math or Science
-          project as a graduation requirement in Grade 12. I won Best of Social
-          Inspiration Awards in Environmental Science field.
-        </p>
-        <img src="./pictures/cansat.png" width="200px" alt="" />
-        <h3>CANSAT 2019</h3>
-        <p>
-          During Grade 10, I have an opportunity to join CANSAT Thailand which
-          is a small satellites built in can-sized bottle. I made to the final
-          round and became one of the ten finalists.
-        </p>
+
+      <section
+        id="achievement"
+        class="grid-6"
+        aria-labelledby="achievement-label"
+      >
+        <h2 id="achievement-label">Achievements</h2>
+        <div class="span-3 achivement-card">
+          <img src="./pictures/wizmic.png" width="200px" alt="" />
+          <h3>WIZMIC 2014</h3>
+          <p>
+            In 2014, I had participated in Wizard at Mathematics International
+            Competition 2014 (WIZMIC) between 14-22 October 2014, India. I won a
+            Gold medal in Individual Contest, Champion in Team Contest, and Gold
+            medal in Group Contest.
+          </p>
+        </div>
+        <div class="span-3 achivement-card">
+          <img src="./pictures/pmwc.png" width="200px" alt="" />
+          <h3>PMWC 2015</h3>
+          <p>
+            Po Leung Kuk Primary Mathematics World Contest 2015 (PMWC 2015)
+            between 12-17 July 2015 at Hongkong, I have been selected to be one
+            of representative of 12 Thai talents participating in PMWC
+            International Mathematics Olympiad and got Gold medal on Individual
+            contest with score of 14 out of 15.
+          </p>
+        </div>
+        <div class="span-2 achivement-card">
+          <img src="./pictures/itym.png" width="200px" alt="" />
+          <h3>ITYM 2019</h3>
+          <p>
+            I have been selected to be part of KVIS Thai team in the
+            International Tournaments of Young Mathematicians (ITYM) 2019 in
+            Barcelona, Spain. I got honorable mention awards with my team.
+          </p>
+        </div>
+        <div class="span-2 achivement-card">
+          <img src="./pictures/kvis-isf.png" width="200px" alt="" />
+          <h3>4th KVIS ISF</h3>
+          <p>
+            During KVIS, I had 3 years to develop and create a Math or Science
+            project as a graduation requirement in Grade 12. I won Best of
+            Social Inspiration Awards in Environmental Science field.
+          </p>
+        </div>
+        <div class="span-2 achivement-card">
+          <img src="./pictures/cansat.png" width="200px" alt="" />
+          <h3>CANSAT 2019</h3>
+          <p>
+            During Grade 10, I have an opportunity to join CANSAT Thailand which
+            is a small satellites built in can-sized bottle. I made to the final
+            round and became one of the ten finalists.
+          </p>
+        </div>
       </section>
       <h2 id="contact-me">Contact Me</h2>
     </main>
